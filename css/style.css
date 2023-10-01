@@ -1,0 +1,402 @@
+/*-------------------------Reset-------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*-------------------------Logo + Nav-------------------------*/
+.encabezado__container {
+  height: 10vh;
+  background-image: linear-gradient(
+    to bottom,
+    #353a40,
+    #353a40,
+    #343a40,
+    #343a40,
+    #333a40
+  );
+  padding: 0px 60px;
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  overflow: hidden;
+  font-size: 1em;
+  .encabezado__logo {
+    display: inline-flex;
+    align-items: center;
+  }
+  .encabezado__logo img {
+    width: 100px;
+  }
+  nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  nav a {
+    padding: 10px;
+  }
+}
+
+/*-------------------------Fondo Portada + Info-------------------------*/
+.portada__container {
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../assets/img/ba1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 0;
+  display: flex;
+  align-items: end;
+  height: 70vh;
+  overflow: hidden;
+
+  .portada__info {
+    color: white;
+    text-align: end;
+    z-index: 2;
+    font-size: 1.1em;
+    margin-left: 60%;
+    margin-right:10%;
+    margin-bottom: 10%;
+
+    
+  }
+
+  .portada__info__btn {
+    a {
+      padding: 8px;
+      margin: 5px;
+      border-radius: 5px;
+      display: inline-block;
+    }
+  }
+  /*overflow: hidden; ----Evita que el contenido se exceda del contenedor----*/
+}
+
+/*-------------------------Oradores-------------------------*/
+.oradores__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  .oradores__card {
+    width: 25vw;
+    margin: 10px;
+    border-color: gray;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 0.07rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .oradores__description {
+    margin: 0px 20px 20px 20px;
+  }
+  .oradores__skills {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    font-size: 0.8em;
+    h4 {
+      margin-right: 4px;
+      padding: 2px;
+    }
+  }
+  .oradores h3 {
+    margin-bottom: 10px;
+  }
+}
+
+/*-----------------Colores especialidad oradores-----------------*/
+
+.amarillo {
+  background-color: #fec106;
+  border-radius: 5px;
+}
+
+.celeste {
+  background-color: #17a2b9;
+  border-radius: 5px;
+  color: white;
+}
+.gris {
+  background-color: #6b767c;
+  border-radius: 5px;
+  color: white;
+}
+.rojo {
+  background-color: #dc3546;
+  border-radius: 5px;
+  color: white;
+}
+
+/*-------------------------Lugar Conferencia-------------------*/
+.lugar__container {
+  margin: 20px 0;
+  display: flex;
+  height: 50vh;
+  width: 100%;
+
+  .lugar__img {
+    width: 50vw;
+    background-image: url("../assets/img/honolulu.png");
+    background-size: cover;
+    background-position: center;
+    border: 1px solid white;
+  }
+  .lugar__info {
+    width: 50vw;
+    background-image: linear-gradient(
+      to bottom,
+      #353a40,
+      #353a40,
+      #343a40,
+      #343a40,
+      #333a40
+    );
+    color: white;
+    padding: 15px 0 0 15px;
+    border: 1px solid white;
+  }
+
+  a {
+    padding: 10px;
+    margin: 10px 0px;
+    border: 1px solid white;
+    border-radius: 5px;
+    display: inline-block;
+  }
+}
+
+/*-------------------------Formulario----------------------*/
+.form__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 20px;
+
+  .input__container {
+    display: flex;
+  }
+  .inputData {
+    padding: 5px;
+    margin: 4px 2px;
+    width: 100%;
+  }
+  .inputDescription {
+    width: 100%;
+  }
+}
+
+.btnEnviar {
+  background-color: #89c40c;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 10px;
+  color: white;
+  width: 100%;
+  margin: 10px 0;
+}
+/*-------------------------Publicidad---------------------*/
+
+.publicidad__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  padding: 20px 0px;
+  background-image: linear-gradient(to bottom, #ffffff, #f3f1f1);
+  .publicidad__h2 {
+    text-align: center;
+    padding: 20px 0;
+    color: white;
+    text-decoration: underline;
+  }
+  .publicidad__mapa {
+    padding: 5px 0px;
+    height: 50%;
+  }
+}
+
+/*-------------------------Footer-------------------------*/
+.pie__container {
+  display: flex;
+
+  width: 100%;
+  background-image: linear-gradient(
+    to right,
+    #1d3744,
+    #1d3e4f,
+    #1d445a,
+    #1d4b65,
+    #1d5271
+  );
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-size: 0.9em;
+
+  a {
+    padding: 20px;
+  }
+}
+
+/*----------------------------Fuentes--------------------------------*/
+/*-----DATOS: 1em = 16px-----*/
+
+body
+h4,
+input,
+textarea {
+  font-family: "Nunito Sans", sans-serif;
+}
+body h2,
+h3,
+p,
+a {
+  font-family: "Nunito Sans", sans-serif;
+}
+
+/*----------------------------Clases extras--------------------------------*/
+
+body a {
+  text-decoration: none;
+  color: white;
+}
+
+.enunciado {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 20px 0;
+  font-size: 2em;
+  span {
+    font-weight: 100;
+  }
+}
+
+.txtIzq {
+  text-align: left;
+  margin: 0px 4px;
+  font-weight: 10;
+  font-size: 0.8em;
+}
+
+.txtS {
+  font-size: 0.4em;
+}
+
+.txtPunteado {
+  text-decoration-line: underline;
+  text-decoration-style: dotted;
+}
+
+a:hover {
+  color: rgb(241, 163, 60);
+}
+/*-------------------------Bordes de los Link y colores-------------------------*/
+.backVerde {
+  background-color: #2ca82c;
+  border-style: none;
+}
+.bordeLink {
+  border: 1px solid white;
+}
+
+.colorVerde {
+  color: #2ca82c;
+}
+.colorGris {
+  color: #9ba4a8;
+}
+.colorBlanco {
+  color: white;
+}
+
+/*-------------------------Media Queries-------------------------*/
+
+@media screen and (max-width: 950px) {
+  .encabezado__container {
+    padding: 0;
+    .encabezado__nav {
+      display: none;
+    }
+  }
+
+  .portada__container {
+    .portada__info {
+      padding: 0;
+      margin: 0 10% 20% 20%;
+    }
+  }
+
+  .oradores__container {
+    flex-direction: column;
+    align-items: center;
+    .oradores__card {
+      width: 60%;
+    }
+  }
+
+  .lugar__container {
+    flex-direction: column-reverse;
+    height: 90vh;
+    .lugar__img {
+      height: 50%;
+      width: 100%;
+    }
+    .lugar__info {
+      height: min-content;
+      width: 100%;
+      padding: 20px 10px;
+    }
+  }
+  .publicidad__container {
+    .publicidad__video {
+      width: 80%;
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .portada__container {
+    .portada__info {
+      text-align: left;
+      padding: 10px;
+      margin: 0 0 20% 0;
+    }
+  }
+
+  .oradores__container {
+    flex-direction: column;
+    align-items: center;
+    .oradores__card {
+      width: 75%;
+    }
+  }
+  .lugar__container {
+    height: 100vh;
+    .lugar__info {
+      height: min-content;
+    }
+  }
+
+  .publicidad__container {
+    height: 70vh;
+    .publicidad__video {
+      width: 100%;
+      height: 50%;
+    }
+    .publicidad__mapa {
+      height: 50%;
+    }
+  }
+}
