@@ -6,66 +6,25 @@
 }
 
 /*-------------------------Logo + Nav-------------------------*/
-.encabezado__container {
-  height: 10vh;
-  background-image: linear-gradient(
-    to bottom,
-    #353a40,
-    #353a40,
-    #343a40,
-    #343a40,
-    #333a40
-  );
-  padding: 0px 60px;
-  display: flex;
-  align-items: center;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  overflow: hidden;
-  font-size: 1em;
-  .encabezado__logo {
-    display: inline-flex;
-    align-items: center;
-  }
-  .encabezado__logo img {
-    width: 100px;
-  }
-  nav ul {
-    list-style: none;
-    display: flex;
-    flex-wrap: nowrap;
-  }
-
-  nav a {
-    padding: 10px;
-  }
+.bg-gris {
+  background-image: linear-gradient(to bottom, #353a40, #343a40, #333a40);
+}
+nav img {
+  width: 100px;
 }
 
+.navbar .container-fluid {
+  width: 91%;
+}
 /*-------------------------Fondo Portada + Info-------------------------*/
-.portada__container {
-  width: 100%;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+#conferencia {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)),
     url("../assets/img/ba1.png");
+  height: 60vh;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  z-index: 0;
-  display: flex;
-  align-items: end;
-  height: 70vh;
-  overflow: hidden;
-
-  .portada__info {
-    color: white;
-    text-align: end;
-    z-index: 2;
-    font-size: 1.1em;
-    margin-left: 60%;
-    margin-right:10%;
-    margin-bottom: 10%;
-
-    
-  }
+  color: white;
 
   .portada__info__btn {
     a {
@@ -75,7 +34,10 @@
       display: inline-block;
     }
   }
-  /*overflow: hidden; ----Evita que el contenido se exceda del contenedor----*/
+  .portada__info {
+    font-weight: 500;
+    z-index: 2;
+  }
 }
 
 /*-------------------------Oradores-------------------------*/
@@ -104,6 +66,7 @@
     font-size: 0.8em;
     h4 {
       margin-right: 4px;
+      margin-bottom: 0px;
       padding: 2px;
     }
   }
@@ -117,22 +80,30 @@
 .amarillo {
   background-color: #fec106;
   border-radius: 5px;
+  font-size: 0.9em;
+  font-weight: 800;
 }
 
 .celeste {
   background-color: #17a2b9;
   border-radius: 5px;
   color: white;
+  font-size: 0.9em;
+  font-weight: 800;
 }
 .gris {
   background-color: #6b767c;
   border-radius: 5px;
   color: white;
+  font-size: 0.9em;
+  font-weight: 800;
 }
 .rojo {
   background-color: #dc3546;
   border-radius: 5px;
   color: white;
+  font-size: 0.9em;
+  font-weight: 800;
 }
 
 /*-------------------------Lugar Conferencia-------------------*/
@@ -211,7 +182,6 @@
   align-items: center;
   height: 100vh;
   width: 100%;
-  padding: 20px 0px;
   background-image: linear-gradient(to bottom, #ffffff, #f3f1f1);
   .publicidad__h2 {
     text-align: center;
@@ -220,7 +190,7 @@
     text-decoration: underline;
   }
   .publicidad__mapa {
-    padding: 5px 0px;
+    padding-top: 10px;
     height: 50%;
   }
 }
@@ -251,20 +221,6 @@
 
 /*----------------------------Fuentes--------------------------------*/
 /*-----DATOS: 1em = 16px-----*/
-
-body
-h4,
-input,
-textarea {
-  font-family: "Nunito Sans", sans-serif;
-}
-body h2,
-h3,
-p,
-a {
-  font-family: "Nunito Sans", sans-serif;
-}
-
 /*----------------------------Clases extras--------------------------------*/
 
 body a {
@@ -323,21 +279,10 @@ a:hover {
 
 /*-------------------------Media Queries-------------------------*/
 
-@media screen and (max-width: 950px) {
-  .encabezado__container {
-    padding: 0;
-    .encabezado__nav {
-      display: none;
-    }
+@media screen and (max-width: 992px) {
+  #conferencia{
+    height: 50vh;
   }
-
-  .portada__container {
-    .portada__info {
-      padding: 0;
-      margin: 0 10% 20% 20%;
-    }
-  }
-
   .oradores__container {
     flex-direction: column;
     align-items: center;
@@ -366,15 +311,7 @@ a:hover {
   }
 }
 
-@media screen and (max-width: 450px) {
-  .portada__container {
-    .portada__info {
-      text-align: left;
-      padding: 10px;
-      margin: 0 0 20% 0;
-    }
-  }
-
+@media screen and (max-width: 768px) {
   .oradores__container {
     flex-direction: column;
     align-items: center;
@@ -399,4 +336,8 @@ a:hover {
       height: 50%;
     }
   }
+}
+
+@media screen and (max-width: 576px) {
+
 }

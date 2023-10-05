@@ -4,59 +4,94 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Proyecto Integrador front | Demian Scarafiocca</title>
-    <link rel="stylesheet" href="css/style.css" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz@6..12&display=swap"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
     />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <header>
-      <section class="encabezado__container">
-        <div class="encabezado__logo">
-          <a href="index.html"
-            ><img src="assets/img/codoacodo.png" alt="Logo codo a codo"
-          /></a>
-          <h2 class="colorBlanco">Conf Bs As</h2>
+      <nav
+        class="navbar navbar-expand-lg bg-body-tertiary bg-dark bg-gris"
+        data-bs-theme="dark"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"
+            ><img src="assets/img/codoacodo.png" alt="Logo codo a codo" />Conf
+            Bs As</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul
+              class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-end"
+            >
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="#conferencia"
+                  >La conferencia</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#oradores">Los oradores</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#lugarFecha">El lugar y la fecha</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#formularioOrador"
+                  >Conviértete en orador</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link colorVerde" href="./pages/tickets.html"
+                  >Comprar tickets</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
-        <nav class="encabezado__nav">
-          <ul>
-            <li>
-              <a class="colorBlanco" href="#conferencia">La conferencia </a>
-            </li>
-            <li><a class="colorGris" href="#oradores">Los oradores</a></li>
-            <li>
-              <a class="colorGris" href="#lugarFecha">El lugar y la fecha</a>
-            </li>
-            <li>
-              <a class="colorGris" href="#formularioOrador"
-                >Conviértete en orador</a
-              >
-            </li>
-            <li>
-              <a class="colorVerde" href="./pages/tickets.html"
-                >Comprar tickets</a
-              >
-            </li>
-          </ul>
-        </nav>
-      </section>
-      <section id="conferencia" class="portada__container">
-        <div class="portada__info">
-          <h1>Conferencia Buenos Aires</h1>
-          <p>
-            Bs As llega por primera vez a Argentina. Un evento para compartir
-            con nuestra comunidad el conocimiento y experiencia de los expertos
-            que están creando el futuro de Internet. Ven a conocer a miembros
-            del evento, a otros estudiantes de Codo a Codo y los oradores de
-            primer nivel que tenemos para ti. Te esperamos!
-          </p>
-          <div class="portada__info__btn">
-            <a class="bordeLink" href="">Quiero ser orador</a>
-            <a class="backVerde" href="./pages/tickets.html">Comprar tickets</a>
+      </nav>
+      <section id="conferencia">
+        <div class="container h-100">
+          <div class="row justify-content-end align-items-center h-100">
+            <div class="portada__info text-end col-lg-6 col-md-8">
+              <h1>Conf Bs As</h1>
+              <p>
+                Bs As llega por primera vez a Argentina. Un evento para
+                compartir con nuestra comunidad el conocimiento y experiencia de
+                los expertos que están creando el futuro de Internet. Ven a
+                conocer a miembros del evento, a otros estudiantes de Codo a
+                Codo y los oradores de primer nivel que tenemos para ti. Te
+                esperamos!
+              </p>
+              <div class="portada__info__btn">
+                <a class="bordeLink" href="">Quiero ser orador</a>
+                <a class="backVerde" href="./pages/tickets.html"
+                  >Comprar tickets</a
+                >
+              </div>
+            </div>
           </div>
         </div>
       </section>
