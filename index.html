@@ -18,7 +18,9 @@
     ></script>
     <link rel="stylesheet" href="css/style.css" />
   </head>
+  <!--Desktop First-->
   <body>
+    <!--Header incluye navbar y portada (Bootstrap)-->
     <header>
       <nav
         class="navbar navbar-expand-lg bg-body-tertiary bg-dark bg-gris"
@@ -26,9 +28,9 @@
       >
         <div class="container-fluid">
           <a class="navbar-brand" href="index.html"
-            ><img src="assets/img/codoacodo.png" alt="Logo codo a codo" />Conf
-            Bs As</a
-          >
+            ><img src="assets/img/codoacodo.png" alt="Logo codo a codo"
+          /></a>
+          <a href="index.html" class="navbar-brand-text">Conf Bs As</a>
           <button
             class="navbar-toggler"
             type="button"
@@ -64,7 +66,7 @@
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link colorVerde" href="./pages/tickets.html"
+                <a class="nav-link colorVerde" href="pages/tickets.html"
                   >Comprar tickets</a
                 >
               </li>
@@ -72,6 +74,7 @@
           </div>
         </div>
       </nav>
+      <!--Portada incluye información útil de la conferencia-->
       <section id="conferencia">
         <div class="container h-100">
           <div class="row justify-content-end align-items-center h-100">
@@ -86,8 +89,10 @@
                 esperamos!
               </p>
               <div class="portada__info__btn">
-                <a class="bordeLink" href="">Quiero ser orador</a>
-                <a class="backVerde" href="./pages/tickets.html"
+                <a class="bordeLink" href="#formularioOrador"
+                  >Quiero ser orador</a
+                >
+                <a class="backVerde" href="pages/tickets.html"
                   >Comprar tickets</a
                 >
               </div>
@@ -98,6 +103,7 @@
     </header>
 
     <main>
+      <!--Contenedor Oradores (CSS puro)-->
       <section id="oradores">
         <h2 class="enunciado">
           <span class="txtS">CONOCE A LOS</span>ORADORES
@@ -156,31 +162,38 @@
           </div>
         </div>
       </section>
-
-      <section id="lugarFecha" class="lugar__container">
-        <div class="lugar__img"></div>
-        <div class="lugar__info">
-          <h2>Bs As - Octubre</h2>
-          <p>
-            ¡Bienvenido a Honolulu, la joya costera de Buenos Aires, Argentina!
-            Este paradísiaco rincón bañado por el sol se convierte en el
-            escenario perfecto para nuestra emocionante Convención de Oradores.
-            <br /><br />
-            Imaginate escuchar a los renombrados oradores internacionales, como
-            Steve Jobs, Bill Gates y Ada Lovelace, mientras disfrutas de la
-            brisa marina y las vistas panorámicas. Honolulu ofrece la
-            combinación perfecta de inspiración y relajación, haciendo que este
-            evento sea inolvidable. <br /><br />
-            ¿Te gustaría unirte a la lista de oradores? Completa nuestro
-            formulario "Conviértete en Orador" y comparte tu pasión y
-            conocimiento con una audiencia ávida de aprender. <br /><br />
-            ¡Juntos, hagamos que la Convención de Oradores en Honolulu sea un
-            éxito!
-          </p>
-          <a href="">Conocé más</a>
+      <!--Sección lugar y fecha (Bootstrap)-->
+      <section id="lugarFecha" class="container-fluid">
+        <div class="row lugar__container">
+          <img
+            src="assets/img/honolulu.png"
+            class="lugar__img col-lg-6 col-md-12"
+            alt="Honolulu fotografia"
+          />
+          <div class="lugar__info col-lg-6 col-md-12 py-3">
+            <h2>Bs As - Octubre</h2>
+            <p>
+              ¡Bienvenido a Honolulu, la joya costera de Buenos Aires,
+              Argentina! Este paradísiaco rincón bañado por el sol se convierte
+              en el escenario perfecto para nuestra emocionante Convención de
+              Oradores.
+              <br /><br />
+              Imaginate escuchar a los renombrados oradores internacionales,
+              como Steve Jobs, Bill Gates y Ada Lovelace, mientras disfrutas de
+              la brisa marina y las vistas panorámicas. Honolulu ofrece la
+              combinación perfecta de inspiración y relajación, haciendo que
+              este evento sea inolvidable. <br /><br />
+              ¿Te gustaría unirte a la lista de oradores? Completa nuestro
+              formulario "Conviértete en Orador" y comparte tu pasión y
+              conocimiento con una audiencia ávida de aprender. <br /><br />
+              ¡Juntos, hagamos que la Convención de Oradores en Honolulu sea un
+              éxito!
+            </p>
+            <a href="index.html">Conocé más</a>
+          </div>
         </div>
       </section>
-
+      <!--Formulario (CSS puro)-->
       <section id="formularioOrador" class="form__container">
         <h2 class="enunciado">
           <span class="txtS">CONVIÉRTETE EN UN</span>ORADOR
@@ -224,7 +237,7 @@
         </div>
       </section>
     </main>
-
+    <!--Aside (CSS puro)-->
     <aside class="publicidad__container">
       <h2 class="enunciado">
         <span class="txtS">CONOCE LA CIUDAD DE </span>BUENOS AIRES
@@ -249,6 +262,7 @@
         referrerpolicy="no-referrer-when-downgrade"
       ></iframe>
     </aside>
+    <!--Footer (CSS puro)-->
     <footer class="pie__container">
       <a class="salto" href="">Preguntas <br />Frecuentes</a>
       <a href="">Contáctenos</a>
