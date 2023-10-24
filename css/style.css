@@ -128,14 +128,13 @@ nav img {
   );
   color: white;
   border: 1px solid white;
-
-  a {
-    padding: 10px;
-    margin: 10px 0px;
-    border: 1px solid white;
-    border-radius: 5px;
-    display: inline-block;
-  }
+}
+.lugar__info a {
+  padding: 10px;
+  margin: 10px 0px;
+  border: 1px solid white;
+  border-radius: 5px;
+  display: inline-block;
 }
 /*-------------------------Formulario----------------------*/
 .form__container {
@@ -191,7 +190,6 @@ nav img {
 /*-------------------------Footer-------------------------*/
 .pie__container {
   display: flex;
-  height: 10vh;
   width: 100%;
   background-image: linear-gradient(
     to right,
