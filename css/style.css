@@ -33,16 +33,14 @@ nav img {
   background-position: center;
   color: white;
 
-  .portada__info__btn {
-    a {
+  .portada__info__btn a{
       padding: 8px;
       margin: 5px;
       border-radius: 5px;
       display: inline-block;
-    }
   }
   .portada__info {
-    font-weight: 500;
+    font-weight: 400;
     z-index: 2;
   }
 }
@@ -54,7 +52,7 @@ nav img {
   justify-content: center;
   flex-wrap: wrap;
 
-  .oradores__card {
+  .oradores__card{
     width: 25vw;
     margin: 10px;
     border-color: gray;
@@ -72,11 +70,11 @@ nav img {
     flex-direction: row;
     margin-top: 10px;
     font-size: 0.8em;
-    h4 {
-      margin-right: 4px;
-      margin-bottom: 0px;
-      padding: 2px;
-    }
+  }
+  .oradores__skills h4 {
+    margin-right: 4px;
+    margin-bottom: 0px;
+    padding: 2px;
   }
   .oradores h3 {
     margin-bottom: 10px;
@@ -193,7 +191,7 @@ nav img {
 /*-------------------------Footer-------------------------*/
 .pie__container {
   display: flex;
-  height: max-content;
+  height: 10vh;
   width: 100%;
   background-image: linear-gradient(
     to right,
@@ -208,10 +206,9 @@ nav img {
   justify-content: center;
   flex-wrap: wrap;
   font-size: 0.9em;
-
-  a {
-    padding: 20px;
-  }
+}
+.pie__container a {
+  padding: 20px;
 }
 
 /*----------------------------Clases extra estilos de fuente--------------------------------*/
