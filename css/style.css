@@ -19,9 +19,8 @@ nav img {
 .navbar-brand {
   margin: 0;
 }
-
-.navbar .container-fluid {
-  width: 91%;
+.navbar {
+  width: 100%;
 }
 /*-------------------------Fondo Portada + Info-------------------------*/
 #conferencia {
@@ -194,7 +193,7 @@ nav img {
 /*-------------------------Footer-------------------------*/
 .pie__container {
   display: flex;
-
+  height: max-content;
   width: 100%;
   background-image: linear-gradient(
     to right,
@@ -255,6 +254,26 @@ body a {
 a:hover {
   color: rgb(241, 163, 60);
 }
+
+.card {
+  padding: 15px;
+  text-align: center;
+  border-radius: 0;
+}
+#total {
+  padding: 15px;
+  background-color: #cce5ff;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.container__tickets{
+  height: 100%;
+  margin-bottom: 60px;
+  margin-top: 60px;
+}
+
 /*-------------------------Bordes de Links y colores-------------------------*/
 .backVerde {
   background-color: #2ca82c;
@@ -319,5 +338,13 @@ a:hover {
     .publicidad__mapa {
       height: 50%;
     }
+  }
+  .card {
+    margin-bottom: 10px;
+  }
+  .container__tickets{
+    height: 100%;
+    margin-bottom: 25px;
+    margin-top: 25px;
   }
 }
