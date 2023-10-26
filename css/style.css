@@ -20,7 +20,7 @@ nav img {
 }
 .navbar {
   padding: 5px 5%;
-  height: 80px;
+  min-height: 70px;
   width: 100%;
   position: fixed;
   top: 0px;
@@ -28,8 +28,9 @@ nav img {
 }
 /*-------------------------html + Main-------------------------*/
 main{
-  margin-top: 80px;
-  min-height: calc(100vh - 80px);
+  position: relative;
+  margin-top: 70px;
+  min-height: calc(100vh - 70px);
 }
 /*-------------------------Fondo Portada + Info-------------------------*/
 #conferencia {

@@ -19,7 +19,6 @@ document.addEventListener("DOMContentLoaded", () => {
       case "3":
         return 15;
       default:
-        alert("No se eligió una categoría válida");
         return 0;
     }
   };
@@ -38,6 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
     return esMail.test(email);
   };
 
+ 
   const btnresumen = document.getElementById("calcular");
 
   btnresumen.addEventListener("click", () => {
@@ -47,7 +47,9 @@ document.addEventListener("DOMContentLoaded", () => {
     let categoriaInput = document.getElementById("categoria");
     let sumatoria = document.getElementById("sumatoria");
     let cantidadInput = document.getElementById("cantidad");
-    document.getElementById("formulario").classList+="was-validated";
+    let formulario = document.getElementById("formulario").classList;
+    formulario.add("was-validated");
+    
 
     if (validarTexto(nameInput)) {
       if (validarTexto(lastNameInput)) {
