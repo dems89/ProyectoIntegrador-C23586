@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="../css/style.css" />
   </head>
   <body>
+    <header>
     <nav
       class="navbar navbar-expand-lg bg-body-tertiary bg-dark bg-gris"
       data-bs-theme="dark"
@@ -42,7 +43,10 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-end">
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="../index.html#conferencia"
+              <a
+                class="nav-link"
+                aria-current="page"
+                href="../index.html#conferencia"
                 >La conferencia</a
               >
             </li>
@@ -50,7 +54,9 @@
               <a class="nav-link" href="../index.html#oradores">Los oradores</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../index.html#lugarFecha">El lugar y la fecha</a>
+              <a class="nav-link" href="../index.html#lugarFecha"
+                >El lugar y la fecha</a
+              >
             </li>
             <li class="nav-item">
               <a class="nav-link" href="../index.html#formularioOrador"
@@ -66,56 +72,78 @@
         </div>
       </div>
     </nav>
-
-    <section class="container p-3 container__tickets">
-      <div class="row justify-content-center">
-        <div class="col-8 col-md-4 col-lg-3">
-          <div class="card border-primary">
-            <h4>Estudiante</h4>
-            <p>Tienen un descuento</p>
-            <p class="fw-bolder">80%</p>
-            <p class="fw-light text-secondary">*presentar documentación</p>
+  </header>
+    <main class="tickets">
+      <section class="container container__tickets">
+        <div class="row justify-content-center">
+          <div class="col-6 col-md-4">
+            <div class="card border-primary">
+              <h4>Estudiante</h4>
+              <p>Tienen un descuento</p>
+              <p class="fw-bolder">80%</p>
+              <p class="fw-light text-secondary">*presentar documentación</p>
+            </div>
+          </div>
+          <div class="col-6 col-md-4">
+            <div class="card border-info">
+              <h4>Trainee</h4>
+              <p>Tienen un descuento</p>
+              <p class="fw-bolder">50%</p>
+              <p class="fw-light text-secondary">*presentar documentación</p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card border-warning">
+              <h4>Junior</h4>
+              <p>Tienen un descuento</p>
+              <p class="fw-bolder">15%</p>
+              <p class="fw-light text-secondary">*presentar documentación</p>
+            </div>
           </div>
         </div>
-        <div class="col-8 col-md-4 col-lg-3">
-          <div class="card border-info">
-            <h5>Trainee</h5>
-            <p>Tienen un descuento</p>
-            <p class="fw-bolder">50%</p>
-            <p class="fw-light text-secondary">*presentar documentación</p>
-          </div>
-        </div>
-        <div class="col-8 col-md-4 col-lg-3">
-          <div class="card border-warning">
-            <h4>Junior</h4>
-            <p>Tienen un descuento</p>
-            <p class="fw-bolder">15%</p>
-            <p class="fw-light text-secondary">*presentar documentación</p>
-          </div>
-        </div>
-      </div>
+      </section>
       <h2 class="enunciado">
         <span class="txtS">VENTA</span>VALOR DE TICKET $200
       </h2>
-      <div class="container">
-        <form>
+      <div class="container container__formulario">
+        <form id="formulario" class="">
           <div class="row">
             <div class="col">
-              <input id="name" type="text" class="form-control" placeholder="Nombre" aria-label="Nombre"required>
+              <input
+                id="name"
+                type="text"
+                class="form-control"
+                placeholder="Nombre"
+                aria-label="Nombre"
+                required
+              />
+              <div class="invalid-feedback">Este campo es obligatorio.</div>
             </div>
-            <div  class="col">
-              <input id="lastName" type="text" class="form-control" placeholder="Apellido" aria-label="Apellido"required>
+            <div class="col">
+              <input
+                id="lastName"
+                type="text"
+                class="form-control"
+                placeholder="Apellido"
+                aria-label="Apellido"
+                required
+              />
+              <div class="invalid-feedback">Este campo es obligatorio.</div>
             </div>
           </div>
-          <div class="my-3">
-             <input type="email" class="form-control" id="mail" placeholder="Correo"required>
-            
+          <div class="col my-3">
+            <input
+              type="email"
+              class="form-control"
+              id="mail"
+              placeholder="Correo"
+              required
+            />
+            <div class="invalid-feedback">correo@proveedor</div>
           </div>
           <div class="row">
-            <div class="col-6">
-              <label for="cantidad" class="form-label"
-                >Cantidad</label
-              >
+            <div class="col">
+              <label for="cantidad" class="form-label">Cantidad</label>
               <input
                 type="number"
                 class="form-control"
@@ -123,32 +151,50 @@
                 min="1"
                 required
               />
+              <div class="invalid-feedback">Debe ser mayor a "0".</div>
             </div>
-            <div class="col-6">
-              <label for="category" class="form-label"
-              >Categoria</label
-            >
-              <select id="categoria" class="form-select" aria-label="Categoria"required>
+            <div class="col">
+              <label for="category" class="form-label">Categoria</label>
+              <select
+                id="categoria"
+                class="form-select"
+                aria-label="Categoria"
+                required
+              >
                 <label for="inputcategory" class="form-label">Categoria</label>
                 <option value="1">Estudiante</option>
                 <option value="2">Trainee</option>
                 <option value="3">Junior</option>
               </select>
+              <div class="invalid-feedback">Este campo es obligatorio.</div>
             </div>
+          </div>
+          <div class="col">
+            <p id="total" class="text-primary bg-secundary my-4">
+              Total a pagar : <span class="fw-bolder" id="sumatoria"></span>
+            </p>
+            <div class="row botones">
+              <div class="col">
+                <input
+                  class="btnVerde"
+                  type="button"
+                  value="Borrar"
+                  id="borrar"
+                />
+              </div>
+              <div class="col">
+                <input
+                  class="btnVerde"
+                  type="button"
+                  value="Resumen"
+                  id="calcular"
+                />
+              </div>
+            </div>
+          </div>
         </form>
-        <div class="col-12">
-          <p id="total" class=" text-primary bg-secundary my-4">Total a pagar: $<span id="sumatoria"></span>
-          <div class="row botones">              
-          <div class="col-6">
-            <input class="btnEnviar" type="button" value="Borrar" id="borrar" />
-          </div>
-          <div class="col-6">
-            <input class="btnEnviar" type="button" value="Resumen" id="calcular"/>
-          </div>
-        </div>
       </div>
-      </div>
-    </section>
+    </main>
     <footer class="pie__container">
       <a class="salto" href="">Preguntas <br />Frecuentes</a>
       <a href="">Contáctenos</a>

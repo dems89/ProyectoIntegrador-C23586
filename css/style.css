@@ -4,7 +4,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 /*-------------------------Logo + Nav-------------------------*/
 .navbar-brand-text {
   font-size: large;
@@ -20,21 +19,31 @@ nav img {
   margin: 0;
 }
 .navbar {
-  padding: 5px 60px;
+  padding: 5px 5%;
+  height: 80px;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  z-index: 3;
+}
+/*-------------------------html + Main-------------------------*/
+main{
+  margin-top: 80px;
+  min-height: calc(100vh - 80px);
 }
 /*-------------------------Fondo Portada + Info-------------------------*/
 #conferencia {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)),
     url("../assets/img/ba1.png");
   height: 80vh;
-  min-height: 400px;
+  min-height: 450px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   color: white;
 
   .portada__info__btn a{
-      padding: 8px;
+      padding: 10px;
       margin: 5px;
       border-radius: 5px;
       display: inline-block;
@@ -157,7 +166,7 @@ nav img {
   }
 }
 
-.btnEnviar {
+.btnVerde {
   background-color: #89c40c;
   border: none;
   border-radius: 0.5rem;
@@ -188,6 +197,10 @@ nav img {
 }
 
 /*-------------------------Footer-------------------------*/
+/*footer{
+  position: absolute;
+  bottom: 0px;
+}*/
 .pie__container {
   display: flex;
   width: 100%;
@@ -248,12 +261,17 @@ body a {
 
 a:hover {
   color: rgb(241, 163, 60);
-}
-
+}/*-------------------------Pagina Tickets-------------------------*/
 .card {
-  padding: 15px;
+  padding: 25px;
   text-align: center;
   border-radius: 0;
+}
+.container__tickets{
+  padding-top: 25px;
+}
+.container__formulario{
+  padding-bottom: 25px;
 }
 #total {
   padding: 15px;
@@ -261,12 +279,6 @@ a:hover {
   border-radius: 5px;
   border-style: solid;
   border-width: 1px;
-}
-
-.container__tickets{
-  height: 100%;
-  margin-bottom: 60px;
-  margin-top: 60px;
 }
 
 /*-------------------------Bordes de Links y colores-------------------------*/
@@ -291,9 +303,7 @@ a:hover {
 /*-------------------------Media Queries-------------------------*/
 
 @media screen and (max-width: 992px) {
-  .navbar {
-    padding: 5px 20px;
-  }
+  
   .navbar-brand-text {
     justify-content: center;
     margin-right: 30px;
@@ -341,9 +351,5 @@ a:hover {
   .card {
     margin-bottom: 10px;
   }
-  .container__tickets{
-    height: 100%;
-    margin-bottom: 25px;
-    margin-top: 25px;
-  }
+ 
 }

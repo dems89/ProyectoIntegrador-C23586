@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <!--Desktop First-->
-  <body> 
+  <body>
     <!--Header incluye navbar y portada (Bootstrap)-->
     <header>
       <nav
@@ -74,6 +74,8 @@
           </div>
         </div>
       </nav>
+    </header>
+    <main>
       <!--Portada incluye información útil de la conferencia-->
       <section id="conferencia">
         <div class="container h-100">
@@ -100,9 +102,7 @@
           </div>
         </div>
       </section>
-    </header>
 
-    <main>
       <!--Contenedor Oradores (CSS puro)-->
       <section id="oradores">
         <h2 class="enunciado">
@@ -233,35 +233,36 @@
             ></textarea>
             <p class="txtIzq">Recuerda incluir un titulo para tu charla.</p>
           </form>
-          <input class="btnEnviar" type="submit" value="Enviar" />
+          <input class="btnVerde" type="submit" value="Enviar" />
         </div>
       </section>
+
+      <!--Aside (CSS puro)-->
+      <aside class="publicidad__container">
+        <h2 class="enunciado">
+          <span class="txtS">CONOCE LA CIUDAD DE </span>BUENOS AIRES
+        </h2>
+        <iframe
+          class="publicidad__video"
+          src="https://www.youtube.com/embed/oTDXnAXw66Y?si=JYHLwWgkE563Es8r"
+          title="YouTube video player"
+          width="50%"
+          height="60%"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+        <iframe
+          class="publicidad__mapa"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d70129.51637422311!2d-58.46763809982465!3d-34.61399905993844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3b4ef90cbd%3A0xa0b3812e88e88e87!2sBuenos%20Aires%2C%20CABA!5e0!3m2!1ses-419!2sar!4v1695878474874!5m2!1ses-419!2sar"
+          width="100%"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </aside>
     </main>
-    <!--Aside (CSS puro)-->
-    <aside class="publicidad__container">
-      <h2 class="enunciado">
-        <span class="txtS">CONOCE LA CIUDAD DE </span>BUENOS AIRES
-      </h2>
-      <iframe
-        class="publicidad__video"
-        src="https://www.youtube.com/embed/oTDXnAXw66Y?si=JYHLwWgkE563Es8r"
-        title="YouTube video player"
-        width="50%"
-        height="60%"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen
-      ></iframe>
-      <iframe
-        class="publicidad__mapa"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d70129.51637422311!2d-58.46763809982465!3d-34.61399905993844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3b4ef90cbd%3A0xa0b3812e88e88e87!2sBuenos%20Aires%2C%20CABA!5e0!3m2!1ses-419!2sar!4v1695878474874!5m2!1ses-419!2sar"
-        width="100%"
-        style="border: 0"
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-      ></iframe>
-    </aside>
     <!--Footer (CSS puro)-->
     <footer class="pie__container">
       <a class="salto" href="">Preguntas <br />Frecuentes</a>
