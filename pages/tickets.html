@@ -106,7 +106,7 @@
         <span class="txtS">VENTA</span>VALOR DE TICKET $200
       </h2>
       <div class="container container__formulario">
-        <form id="formulario" class="">
+        <form id="formulario" class="was-validated">
           <div class="row">
             <div class="col">
               <input
@@ -115,6 +115,7 @@
                 class="form-control"
                 placeholder="Nombre"
                 aria-label="Nombre"
+                pattern="^[a-zA-Z][a-zA-Z\s]*$"
                 required
               />
               <div class="invalid-feedback">Este campo es obligatorio.</div>
@@ -126,6 +127,7 @@
                 class="form-control"
                 placeholder="Apellido"
                 aria-label="Apellido"
+                pattern="^[a-zA-Z][a-zA-Z\s]*$"
                 required
               />
               <div class="invalid-feedback">Este campo es obligatorio.</div>
@@ -165,6 +167,7 @@
                 <option value="1">Estudiante</option>
                 <option value="2">Trainee</option>
                 <option value="3">Junior</option>
+                <option value="4">Entrada General</option>
               </select>
               <div class="invalid-feedback">Este campo es obligatorio.</div>
             </div>

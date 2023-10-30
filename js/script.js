@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("categoria").value = "";
     document.getElementById("sumatoria").innerHTML = "";
     document.getElementById("cantidad").value = "";
-    document.getElementById("formulario").classList="";
+    /*document.getElementById("formulario").classList="";*/
   });
 
   const categorizar = (categoria) => {
@@ -18,6 +18,8 @@ document.addEventListener("DOMContentLoaded", () => {
         return 50;
       case "3":
         return 15;
+        case "4":
+        return 0;
       default:
         return 0;
     }
@@ -47,8 +49,8 @@ document.addEventListener("DOMContentLoaded", () => {
     let categoriaInput = document.getElementById("categoria");
     let sumatoria = document.getElementById("sumatoria");
     let cantidadInput = document.getElementById("cantidad");
-    let formulario = document.getElementById("formulario").classList;
-    formulario.add("was-validated");
+    /*let formulario = document.getElementById("formulario").classList;
+    formulario.add("was-validated");*/
     
 
     if (validarTexto(nameInput)) {
