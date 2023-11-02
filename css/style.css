@@ -21,7 +21,7 @@ nav img {
 .navbar {
   padding: 5px 5%;
   min-height: 70px;
-  width: 100%;
+  width: 100vw;
   position: fixed;
   top: 0px;
   z-index: 3;
