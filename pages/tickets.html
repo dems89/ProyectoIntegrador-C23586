@@ -106,7 +106,7 @@
         <span class="txtS">VENTA</span>VALOR DE TICKET $200
       </h2>
       <div class="container container__formulario">
-        <form id="formulario" class="was-validated">
+        <form id="formulario" class="">
           <div class="row">
             <div class="col">
               <input
@@ -164,34 +164,24 @@
                 required
               >
                 <label for="inputcategory" class="form-label">Categoria</label>
+                <option value="0">Sin categoria</option>
                 <option value="1">Estudiante</option>
                 <option value="2">Trainee</option>
                 <option value="3">Junior</option>
-                <option value="4">Entrada General</option>
               </select>
               <div class="invalid-feedback">Este campo es obligatorio.</div>
             </div>
           </div>
           <div class="col">
             <p id="total" class="text-primary bg-secundary my-4">
-              Total a pagar : <span class="fw-bolder" id="sumatoria"></span>
+              Total a pagar : <span class="fw-bolder" id="total-pagar"></span>
             </p>
             <div class="row botones">
               <div class="col">
-                <input
-                  class="btnVerde"
-                  type="button"
-                  value="Borrar"
-                  id="borrar"
-                />
+                <button type="reset" class="btnVerde" value="borrar" id="borrar">Borrar</button>
               </div>
               <div class="col">
-                <input
-                  class="btnVerde"
-                  type="button"
-                  value="Resumen"
-                  id="calcular"
-                />
+                <button type="button" class="btnVerde" value="resumen" id="calcular">Resumen</button>
               </div>
             </div>
           </div>
