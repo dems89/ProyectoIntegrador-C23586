@@ -27,7 +27,7 @@ nav img {
   z-index: 3;
 }
 /*-------------------------html + Main-------------------------*/
-main{
+main {
   position: relative;
   margin-top: 70px;
   min-height: calc(100vh - 70px);
@@ -43,11 +43,11 @@ main{
   background-position: center;
   color: white;
 
-  .portada__info__btn a{
-      padding: 10px;
-      margin: 5px;
-      border-radius: 5px;
-      display: inline-block;
+  .portada__info__btn a {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    display: inline-block;
   }
   .portada__info {
     font-weight: 400;
@@ -62,7 +62,7 @@ main{
   justify-content: center;
   flex-wrap: wrap;
 
-  .oradores__card{
+  .oradores__card {
     width: 25vw;
     margin: 10px;
     border-color: gray;
@@ -266,7 +266,7 @@ body a {
   text-align: center;
   border-radius: 0;
 }
-.container__tickets{
+.container__tickets {
   margin-top: 5%;
   padding-top: 25px;
 }
@@ -279,20 +279,20 @@ body a {
 }
 /*-------------------------Animaciones-------------------------*/
 
-.boton-animado{
+.boton-animado {
   transition: transform 0.2s ease-in-out;
 }
 .boton-animado:hover {
   transform: scale(1.1);
 }
 a::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 100%;
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color:rgb(228, 167, 87);
+  background-color: rgb(228, 167, 87);
   visibility: hidden;
   transform: scaleX(0);
   transition: visibility 0s, transform 0.3s ease-in-out;
@@ -325,7 +325,6 @@ a:hover::before {
 /*-------------------------Media Queries-------------------------*/
 
 @media screen and (max-width: 992px) {
-  
   .navbar-brand-text {
     justify-content: center;
     margin-right: 30px;
@@ -373,5 +372,4 @@ a:hover::before {
   .card {
     margin-bottom: 10px;
   }
- 
 }

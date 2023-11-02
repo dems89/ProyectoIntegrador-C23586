@@ -81,7 +81,11 @@
       <section id="conferencia">
         <div class="container h-100">
           <div class="row justify-content-end align-items-center h-100">
-            <div data-aos="slide-right" data-aos-once="true" class="portada__info text-end col-lg-6 col-md-8">
+            <div
+              data-aos="slide-right"
+              data-aos-once="true"
+              class="portada__info text-end col-lg-6 col-md-8"
+            >
               <h1>Conf Bs As</h1>
               <p>
                 Bs As llega por primera vez a Argentina. Un evento para
@@ -91,7 +95,7 @@
                 Codo y los oradores de primer nivel que tenemos para ti. Te
                 esperamos!
               </p>
-              <div data-aos="slide-right" data-aos-once="true" data-aos-offset="200"class="portada__info__btn">
+              <div class="portada__info__btn">
                 <a class="bordeLink boton-animado" href="#formularioOrador"
                   >Quiero ser orador</a
                 >
@@ -106,11 +110,16 @@
 
       <!--Contenedor Oradores-->
       <section id="oradores" class="">
-        <h2 class="enunciado">
+        <h2 data-aos="slide-right" data-aos-once="»true»" class="enunciado">
           <span class="txtS">CONOCE A LOS</span>ORADORES
         </h2>
         <div class="oradores__container">
-          <div data-aos="fade-out" data-aos-once=»true» class="oradores__card">
+          <div
+            data-aos="flip-right"
+            data-aos-once="»true»"
+            data-aos-duration="600"
+            class="oradores__card"
+          >
             <img src="assets/img/steve.png" alt="Fotografía de Steve Jobs" />
 
             <div class="oradores__description">
@@ -127,7 +136,12 @@
               </p>
             </div>
           </div>
-          <div data-aos="fade-out"data-aos-once=»true» class="oradores__card">
+          <div
+            data-aos="flip-right"
+            data-aos-once="»true»"
+            data-aos-duration="900"
+            class="oradores__card"
+          >
             <img src="assets/img/bill.png" alt="Fotografía de Bill Gates" />
 
             <div class="oradores__description">
@@ -144,7 +158,12 @@
               </p>
             </div>
           </div>
-          <div data-aos="fade-out"data-aos-once=»true» class="oradores__card">
+          <div
+            data-aos="flip-right"
+            data-aos-once="»true»"
+            data-aos-duration="1200"
+            class="oradores__card"
+          >
             <img src="assets/img/ada.png" alt="Fotografía de Ada Lovelace" />
 
             <div class="oradores__description">
@@ -166,12 +185,18 @@
       <!--Sección lugar y fecha-->
       <section id="lugarFecha" class="container-fluid">
         <div class="row lugar__container">
-            <img data-aos="slide-up"data-aos-once=»true»
+          <img
+            data-aos="slide-right"
+            data-aos-once="true"
             src="assets/img/honolulu.png"
             class="lugar__img col-lg-6 col-md-12"
             alt="Honolulu fotografia"
           />
-          <div data-aos="slide-up"data-aos-once=»true» class="lugar__info col-lg-6 col-md-12 py-3">
+          <div
+            data-aos="fade-in"
+            data-aos-once="true"
+            class="lugar__info col-lg-6 col-md-12 py-3"
+          >
             <h2>Bs As - Octubre</h2>
             <p>
               ¡Bienvenido a Honolulu, la joya costera de Buenos Aires,
@@ -195,11 +220,11 @@
         </div>
       </section>
       <!--Formulario-->
-      <section data-aos="fade-out"data-aos-once=»true» id="formularioOrador" class="form__container">
-        <h2 class="enunciado">
+      <section id="formularioOrador" class="form__container">
+        <h2 data-aos="slide-right" data-aos-once="true" class="enunciado">
           <span class="txtS">CONVIÉRTETE EN UN</span>ORADOR
         </h2>
-        <div>
+        <div data-aos="slide-up" data-aos-once="true">
           <p>
             Anótate como orador para dar una
             <span class="txtPunteado">charla ignite</span>. Cuéntanos de qué
@@ -240,10 +265,12 @@
 
       <!--Aside Publicidad y datos adicionales-->
       <aside class="publicidad__container">
-        <h2 class="enunciado">
+        <h2 data-aos="slide-right" data-aos-once="true" class="enunciado">
           <span class="txtS">CONOCE LA CIUDAD DE </span>BUENOS AIRES
         </h2>
-        <iframe data-aos="slide-up"data-aos-once=»true»
+        <iframe
+          data-aos="slide-up"
+          data-aos-once="»true»"
           class="publicidad__video"
           src="https://www.youtube.com/embed/oTDXnAXw66Y?si=JYHLwWgkE563Es8r"
           title="YouTube video player"
@@ -253,7 +280,9 @@
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen
         ></iframe>
-        <iframe data-aos="slide-up"data-aos-once=»true»
+        <iframe
+          data-aos="slide-up"
+          data-aos-once="»true»"
           class="publicidad__mapa"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d70129.51637422311!2d-58.46763809982465!3d-34.61399905993844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3b4ef90cbd%3A0xa0b3812e88e88e87!2sBuenos%20Aires%2C%20CABA!5e0!3m2!1ses-419!2sar!4v1695878474874!5m2!1ses-419!2sar"
           width="100%"
@@ -277,6 +306,6 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
-      </script>
+    </script>
   </body>
 </html>

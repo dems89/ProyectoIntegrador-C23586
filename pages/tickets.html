@@ -21,79 +21,98 @@
   </head>
   <body>
     <header>
-    <nav
-      class="navbar navbar-expand-lg bg-body-tertiary bg-dark bg-gris"
-      data-bs-theme="dark"
-    >
-      <div class="container-fluid">
-        <a class="navbar-brand" href="../index.html"
-          ><img src="../assets/img/codoacodo.png" alt="Logo codo a codo"
-        /></a>
-        <a href="../index.html" class="navbar-brand-text">Conf Bs As</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-end">
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                aria-current="page"
-                href="../index.html#conferencia"
-                >La conferencia</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../index.html#oradores">Los oradores</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../index.html#lugarFecha"
-                >El lugar y la fecha</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../index.html#formularioOrador"
-                >Conviértete en orador</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link colorVerde" href="tickets.html"
-                >Comprar tickets</a
-              >
-            </li>
-          </ul>
+      <nav
+        class="navbar navbar-expand-lg bg-body-tertiary bg-dark bg-gris"
+        data-bs-theme="dark"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html"
+            ><img src="../assets/img/codoacodo.png" alt="Logo codo a codo"
+          /></a>
+          <a href="../index.html" class="navbar-brand-text">Conf Bs As</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul
+              class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-end"
+            >
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  aria-current="page"
+                  href="../index.html#conferencia"
+                  >La conferencia</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html#oradores"
+                  >Los oradores</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html#lugarFecha"
+                  >El lugar y la fecha</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html#formularioOrador"
+                  >Conviértete en orador</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link colorVerde" href="tickets.html"
+                  >Comprar tickets</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </nav>
-  </header>
+      </nav>
+    </header>
     <main class="tickets">
-      <section  class="container container__tickets">
-        <div data-aos="slide-right" data-aos-once=»true» data-aos-offset="600" class="row justify-content-center">
+      <section class="container container__tickets">
+        <div
+          data-aos="slide-right"
+          data-aos-once="»true»"
+          data-aos-duration="1000"
+          class="row justify-content-center"
+        >
           <div class="col-12 col-md-4">
-            <div  class="card border-primary">
+            <div class="card border-primary">
               <h4>Estudiante</h4>
               <p>Tienen un descuento</p>
               <p class="fw-bolder">80%</p>
               <p class="fw-light text-secondary">*presentar documentación</p>
             </div>
           </div>
-          <div  class="col-12 col-md-4">
-            <div data-aos="slide-right" data-aos-once=»true» data-aos-offset="400" class="card border-info">
+          <div class="col-12 col-md-4">
+            <div
+              data-aos="slide-right"
+              data-aos-once="»true»"
+              data-aos-duration="1000"
+              class="card border-info"
+            >
               <h4>Trainee</h4>
               <p>Tienen un descuento</p>
               <p class="fw-bolder">50%</p>
               <p class="fw-light text-secondary">*presentar documentación</p>
             </div>
           </div>
-          <div data-aos="slide-right" data-aos-once=»true» data-aos-offset="200" class="col-12 col-md-4">
+          <div
+            data-aos="slide-right"
+            data-aos-once="»true»"
+            data-aos-duration="1200"
+            class="col-12 col-md-4"
+          >
             <div class="card border-warning">
               <h4>Junior</h4>
               <p>Tienen un descuento</p>
@@ -103,11 +122,16 @@
           </div>
         </div>
       </section>
-      <h2 class="enunciado">
+      <h2 data-aos="slide-right" data-aos-once="true" class="enunciado">
         <span class="txtS">VENTA</span>VALOR DE TICKET $200
       </h2>
       <div class="container container__formulario">
-        <form data-aos="fade-in" data-aos-once=»true» id="formulario" class="">
+        <form
+          data-aos="slide-up"
+          data-aos-once="»true»"
+          id="formulario"
+          class=""
+        >
           <div class="row">
             <div class="col">
               <input
@@ -142,7 +166,7 @@
               placeholder="Correo"
               required
             />
-            <div class="invalid-feedback">correo@proveedor</div>
+            <div class="invalid-feedback">correo@dominio</div>
           </div>
           <div class="row">
             <div class="col">
@@ -178,11 +202,25 @@
               Total a pagar : <span class="fw-bolder" id="total-pagar"></span>
             </p>
             <div class="row botones">
-              <div  class="col">
-                <button type="reset" class="btnVerde" value="borrar" id="borrar">Borrar</button>
+              <div class="col">
+                <button
+                  type="reset"
+                  class="btnVerde"
+                  value="borrar"
+                  id="borrar"
+                >
+                  Borrar
+                </button>
               </div>
               <div class="col">
-                <button type="button" class="btnVerde" value="resumen" id="calcular">Resumen</button>
+                <button
+                  type="button"
+                  class="btnVerde"
+                  value="resumen"
+                  id="calcular"
+                >
+                  Resumen
+                </button>
               </div>
             </div>
           </div>
@@ -202,6 +240,6 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
-      </script>
+    </script>
   </body>
 </html>

@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", () => {
-
   const categorizar = (categoria) => {
     switch (categoria) {
       case "1":
@@ -14,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
         return 0;
     }
   };
-  
+
   const validarNumero = (numero) => {
     if (numero.value > 0) {
       numero.classList.remove("is-invalid");
