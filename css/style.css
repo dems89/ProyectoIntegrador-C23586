@@ -267,10 +267,8 @@ body a {
   border-radius: 0;
 }
 .container__tickets{
+  margin-top: 5%;
   padding-top: 25px;
-}
-.container__formulario{
-  padding-bottom: 25px;
 }
 #total {
   padding: 15px;
@@ -294,7 +292,7 @@ a::before {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #fff;
+  background-color:rgb(228, 167, 87);
   visibility: hidden;
   transform: scaleX(0);
   transition: visibility 0s, transform 0.3s ease-in-out;

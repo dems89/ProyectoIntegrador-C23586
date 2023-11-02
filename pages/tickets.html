@@ -17,6 +17,7 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <header>
@@ -74,17 +75,17 @@
     </nav>
   </header>
     <main class="tickets">
-      <section class="container container__tickets">
+      <section data-aos="fade-out" data-aos-once=»true» data-aos-duration="1000" class="container container__tickets">
         <div class="row justify-content-center">
-          <div class="col-6 col-md-4">
-            <div class="card border-primary">
+          <div class="col-12 col-md-4">
+            <div  class="card border-primary">
               <h4>Estudiante</h4>
               <p>Tienen un descuento</p>
               <p class="fw-bolder">80%</p>
               <p class="fw-light text-secondary">*presentar documentación</p>
             </div>
           </div>
-          <div class="col-6 col-md-4">
+          <div class="col-12 col-md-4">
             <div class="card border-info">
               <h4>Trainee</h4>
               <p>Tienen un descuento</p>
@@ -92,7 +93,7 @@
               <p class="fw-light text-secondary">*presentar documentación</p>
             </div>
           </div>
-          <div class="col">
+          <div class="col-12 col-md-4">
             <div class="card border-warning">
               <h4>Junior</h4>
               <p>Tienen un descuento</p>
@@ -106,7 +107,7 @@
         <span class="txtS">VENTA</span>VALOR DE TICKET $200
       </h2>
       <div class="container container__formulario">
-        <form id="formulario" class="">
+        <form data-aos="fade-in" data-aos-once=»true» id="formulario" class="">
           <div class="row">
             <div class="col">
               <input
@@ -177,7 +178,7 @@
               Total a pagar : <span class="fw-bolder" id="total-pagar"></span>
             </p>
             <div class="row botones">
-              <div class="col">
+              <div  class="col">
                 <button type="reset" class="btnVerde" value="borrar" id="borrar">Borrar</button>
               </div>
               <div class="col">
@@ -198,5 +199,9 @@
       <a href="">Estudiantes</a>
     </footer>
     <script src="../js/script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+      </script>
   </body>
 </html>
