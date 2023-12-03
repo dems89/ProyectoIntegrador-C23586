@@ -285,7 +285,7 @@ body a {
 .boton-animado:hover {
   transform: scale(1.1);
 }
-a::before {
+header a::before {
   content: "";
   position: absolute;
   width: 100%;
@@ -298,7 +298,7 @@ a::before {
   transition: visibility 0s, transform 0.3s ease-in-out;
 }
 
-a:hover::before {
+header a:hover::before {
   visibility: visible;
   transform: scaleX(1);
 }
