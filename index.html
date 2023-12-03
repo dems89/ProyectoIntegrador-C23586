@@ -230,36 +230,64 @@
             <span class="txtPunteado">charla ignite</span>. Cuéntanos de qué
             quieres hablar!
           </p>
-          <form>
-            <div class="input__container">
-              <input
-                class="inputData"
-                type="text"
-                id="name"
-                name="nombre"
-                placeholder="Nombre"
-                required
-              />
-              <input
-                class="inputData"
-                type="text"
-                id="subname"
-                name="apellido"
-                placeholder="Apellido"
-                required
-              />
+          <form
+            action="includes/agregar_orador.php"
+            method="post"
+            enctype="multipart/form-data"
+          >
+            <div class="d-flex justify-content-center column-gap-1">
+              <div class="form-floating col">
+                <input
+                  class="form-control"
+                  type="text"
+                  name="nombre"
+                  id="name"
+                  placeholder="Nombre"
+                  required
+                />
+                <label for="name">Nombre</label>
+              </div>
+              <div class="form-floating col">
+                <input
+                  class="form-control"
+                  type="text"
+                  name="apellido"
+                  id="lastName"
+                  placeholder="Apellido"
+                  required
+                />
+                <label for="lastName">Apellido</label>
+              </div>
             </div>
+            <div class="form-floating my-1">
+              <input
+                class="form-control"
+                type="email"
+                name="email"
+                id="mail"
+                placeholder="E-Mail"
+                required
+              />
+              <label for="mail">E-mail</label>
+            </div>
+            <input
+              type="file"
+              class="form-control my-1"
+              id="imagen"
+              name="foto"
+              accept="image/*"
+              placeholder="Foto del orador"
+            />
             <textarea
-              class="inputDescription"
-              name="comentario"
-              id="comentario"
-              cols="80"
+              class="form-control my-1"
+              name="tema"
+              id="tema"
               rows="8"
               placeholder="Sobre qué quieres hablar?"
             ></textarea>
             <p class="txtIzq">Recuerda incluir un titulo para tu charla.</p>
+            <input class="btnVerde col" type="submit" value="Enviar">
           </form>
-          <input class="btnVerde" type="submit" value="Enviar" />
         </div>
       </section>
 

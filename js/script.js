@@ -15,10 +15,10 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
   const validarNumero = (numero) => {
-    if (numero.value > 0) {
+    if (parseInt(numero.value) > 0) {
       numero.classList.remove("is-invalid");
       numero.classList.add("is-valid");
-      return parseInt(numero.value);
+      return numero.value;
     } else {
       numero.classList.remove("is-valid");
       numero.classList.add("is-invalid");
